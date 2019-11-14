@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0B6059237BE2D6001B0A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0B6058237BE2D6001B0A5E /* main.m */; };
+		BC0B6082237BF852001B0A5E /* ZMQContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0B607B237BF852001B0A5E /* ZMQContext.m */; };
+		BC0B6083237BF852001B0A5E /* ZMQException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0B607D237BF852001B0A5E /* ZMQException.m */; };
+		BC0B6084237BF852001B0A5E /* ZMQSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0B607E237BF852001B0A5E /* ZMQSocket.m */; };
+		BC0B6085237BF852001B0A5E /* libzmq.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B607F237BF852001B0A5E /* libzmq.5.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC0B6053237BE2D6001B0A5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC0B6055237BE2D6001B0A5E /* ZeroMQOCServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ZeroMQOCServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0B6058237BE2D6001B0A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC0B6079237BF852001B0A5E /* ZMQException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQException.h; sourceTree = "<group>"; };
+		BC0B607A237BF852001B0A5E /* ZMQSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQSocket.h; sourceTree = "<group>"; };
+		BC0B607B237BF852001B0A5E /* ZMQContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQContext.m; sourceTree = "<group>"; };
+		BC0B607C237BF852001B0A5E /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
+		BC0B607D237BF852001B0A5E /* ZMQException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQException.m; sourceTree = "<group>"; };
+		BC0B607E237BF852001B0A5E /* ZMQSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQSocket.m; sourceTree = "<group>"; };
+		BC0B607F237BF852001B0A5E /* libzmq.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libzmq.5.dylib; sourceTree = "<group>"; };
+		BC0B6080237BF852001B0A5E /* ZMQContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQContext.h; sourceTree = "<group>"; };
+		BC0B6081237BF852001B0A5E /* ZMQObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQObjC.h; sourceTree = "<group>"; };
+		BC5B800E237D25A30003DB1C /* client.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = client.py; sourceTree = "<group>"; };
+		BC5B8011237D455D0003DB1C /* zhelpers.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = zhelpers.lua; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0B6052237BE2D6001B0A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0B6085237BF852001B0A5E /* libzmq.5.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0B604C237BE2D6001B0A5E = {
+			isa = PBXGroup;
+			children = (
+				BC0B6057237BE2D6001B0A5E /* ZeroMQOCServer */,
+				BC0B6056237BE2D6001B0A5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0B6056237BE2D6001B0A5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0B6055237BE2D6001B0A5E /* ZeroMQOCServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC0B6057237BE2D6001B0A5E /* ZeroMQOCServer */ = {
+			isa = PBXGroup;
+			children = (
+				BC0B6078237BF852001B0A5E /* objc-zmq */,
+				BC0B6058237BE2D6001B0A5E /* main.m */,
+				BC5B800E237D25A30003DB1C /* client.py */,
+				BC5B8011237D455D0003DB1C /* zhelpers.lua */,
+			);
+			path = ZeroMQOCServer;
+			sourceTree = "<group>";
+		};
+		BC0B6078237BF852001B0A5E /* objc-zmq */ = {
+			isa = PBXGroup;
+			children = (
+				BC0B6079237BF852001B0A5E /* ZMQException.h */,
+				BC0B607A237BF852001B0A5E /* ZMQSocket.h */,
+				BC0B607B237BF852001B0A5E /* ZMQContext.m */,
+				BC0B607C237BF852001B0A5E /* zmq.h */,
+				BC0B607D237BF852001B0A5E /* ZMQException.m */,
+				BC0B607E237BF852001B0A5E /* ZMQSocket.m */,
+				BC0B607F237BF852001B0A5E /* libzmq.5.dylib */,
+				BC0B6080237BF852001B0A5E /* ZMQContext.h */,
+				BC0B6081237BF852001B0A5E /* ZMQObjC.h */,
+			);
+			path = "objc-zmq";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0B6054237BE2D6001B0A5E /* ZeroMQOCServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0B605C237BE2D6001B0A5E /* Build configuration list for PBXNativeTarget "ZeroMQOCServer" */;
+			buildPhases = (
+				BC0B6051237BE2D6001B0A5E /* Sources */,
+				BC0B6052237BE2D6001B0A5E /* Frameworks */,
+				BC0B6053237BE2D6001B0A5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroMQOCServer;
+			productName = ZeroMQOCServer;
+			productReference = BC0B6055237BE2D6001B0A5E /* ZeroMQOCServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0B604D237BE2D6001B0A5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Judith;
+				TargetAttributes = {
+					BC0B6054237BE2D6001B0A5E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BC0B6050237BE2D6001B0A5E /* Build configuration list for PBXProject "ZeroMQOCServer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC0B604C237BE2D6001B0A5E;
+			productRefGroup = BC0B6056237BE2D6001B0A5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0B6054237BE2D6001B0A5E /* ZeroMQOCServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0B6051237BE2D6001B0A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0B6082237BF852001B0A5E /* ZMQContext.m in Sources */,
+				BC0B6059237BE2D6001B0A5E /* main.m in Sources */,
+				BC0B6083237BF852001B0A5E /* ZMQException.m in Sources */,
+				BC0B6084237BF852001B0A5E /* ZMQSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC0B605A237BE2D6001B0A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BC0B605B237BE2D6001B0A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC0B605D237BE2D6001B0A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroMQOCServer/objc-zmq",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC0B605E237BE2D6001B0A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroMQOCServer/objc-zmq",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0B6050237BE2D6001B0A5E /* Build configuration list for PBXProject "ZeroMQOCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0B605A237BE2D6001B0A5E /* Debug */,
+				BC0B605B237BE2D6001B0A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0B605C237BE2D6001B0A5E /* Build configuration list for PBXNativeTarget "ZeroMQOCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0B605D237BE2D6001B0A5E /* Debug */,
+				BC0B605E237BE2D6001B0A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC0B604D237BE2D6001B0A5E /* Project object */;
+}
